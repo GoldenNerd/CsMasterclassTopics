@@ -1,0 +1,5197 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C# Curriculum</title>
+<style>
+/* Basic CSS for the body */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: darkgray ;
+}
+/* CSS for show/hide section content */
+details summary {
+  color: #00008B; /* Default color */
+  cursor: pointer;
+}
+details[open] summary {
+  color: #000033 ; /* Color when expanded */
+  background-color: #9E9E9E;
+}
+/* CSS for section and lesson numbers*/
+.section, .lessonNum {
+  font-size:1rem;
+font-weight: bold;
+color: #8B0000;
+}
+/* CSS for headers 1 */
+h1 {
+  font-size:1.65rem;
+  margin : 0.25rem;
+  
+}
+/* CSS for h2 headers (lecture titles) */
+h2 {
+font-size:1.5rem;
+margin : 0rem;
+margin-left: 1.5rem;
+font-weight: 500 ;
+color: #000033 ;
+background-color: #9E9E9E ;
+}
+/* CSS to hide li dots*/
+.BlockListDots {
+list-style-type: none; /* This removes the bullet points */
+/* padding: 0; This removes the padding on the left side */
+}
+/* CSS for li (lecture topics) */
+ul{
+  font-weight:bold;
+  color: #000033 ;
+  background-color: #9E9E9E ;
+}
+</style>
+</head>
+
+<body>
+<details><summary>
+<h1><span class="section">Section 1 </span>Introduction</h1>
+</summary>
+<details><summary>
+<h2>Introduction Videos</h2>
+</summary>
+<ul class="BlockListDots">
+  <li><span class="lessonNum">1. </span>Welcome! Basic information and how to get help</li>
+  <li><span class="lessonNum">2. </span>46 seconds about your instructor</li>
+  <li><span class="lessonNum">3. </span>72 seconds about what this course is</li>
+  <li><span class="lessonNum">4. </span>105 seconds about what this course isn’t</li>
+  <li><span class="lessonNum">5. </span>97 seconds about practicing what you learn</li>
+  <li><span class="lessonNum">6. </span>112 seconds about time optimization</li>
+  <li><span class="lessonNum">7. </span>Installing Visual Studio Community</li>
+  <li><span class="lessonNum">8. </span>Accessing the code</li>
+  <li><span class="lessonNum">9. </span>Resources you can download</li>
+  <li><span class="lessonNum">10. </span>Coding exercises issues troubleshooting</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 2 </span>C# Fundamentals</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">11 </span>Section Introduction</h2>
+</summary>
+<ul>
+<li>Resources</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">12 </span>Our first C# program</h2></summary></details>
+
+<details><summary>
+<h2><span class="lessonNum">13 </span>From a text file to an executable program</h2></summary>
+<ul>
+<li>
+What compilation is</li>
+<li>
+What the program performing it is called (compiler)</li>
+<li>
+What the compilation result is</li>
+<li>
+What *.dll files are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">14 </span>Programmer's most important skill</h2></summary>
+<ul>
+<li>
+What the most important skill of any programmer is</li>
+<li>
+What to do when our programs don't work as expected</li>
+<li>
+What StackOverflow is</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">15 </span>The goal for this section</h2></summary>
+</details>
+
+<details><summary> <h2><span class="lessonNum">16 </span>Variables</h2></summary>
+<ul>
+<li>
+What variables are</li>
+<li>
+What int and string types are</li>
+<li>
+What the variable’s declaration and initialization are, and what the difference between them is</li>
+<li>
+The shortcut that duplicates a line of code</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">17 </span>Naming variables & introduction to clean code</h2></summary>
+<ul>
+<li>
+How to name variables</li>
+<li>
+What reserved keywords are, and how to use them as variable names</li>
+<li>
+Why clean code is important</li>
+<li>
+Shortcut for renaming elements in code</li>
+<ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">18 </span>Operators</h2></summary>
+<ul>
+<li>
+The most basic C# operators ( +, -, *, /, + +, - - )</li>
+<li>
+What operators precedence is</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">19 </span>Implicitly typed variables</h2></summary>
+<ul>
+<li>
+The purpose of the var keyword
+<li>
+What implicitly and explicitly typed variables are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">20 </span>User input</h2></summary>
+<ul>
+<li>
+How to read user input from the console
+<li>
+What code snippets are
+<li>
+What the role of warnings is</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">21 </span>Debugging with breakpoints</h2></summary>
+<ul>
+<li>
+How to use breakpoints to debug a program</li>
+<li>
+What QuickWatch window is and how to use it</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">22 </span>Coding exercises introduction</h2></summary>
+<ul>
+<li>How to create C# projects</li>
+<li>What IDE is</li>
+<li>What comments are</li>
+<li>How to print messages to the console</li>
+<li>How to configure the options of Visual Studio</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">23 </span>Comments</h2></summary>
+<ul>
+<li>
+How to add single-line and multiline comments to our code
+<li>
+Shortcuts for commenting and uncommenting the code
+<li>
+How to write in multiple lines at once</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">24 </span>Boolean type. Logical negation, equality, comparison, and modulo operators</h2></summary>
+<ul>
+<li>
+New type: bool</li>
+<li>
+==, !=, !, >, >=, <, <=, % operators</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">25 </span>AND (&&) and OR (||) logical operators</h2></summary>
+<ul>
+<li>
+AND (&&) and OR (||) logical operators</li>
+<li>
+What short-circuiting optimization is</li>
+<li>
+In what order we should put logical expressions</li>
+<li>
+How to name boolean variables</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">26 </span>if/else conditional statement</h2></summary>
+<ul>
+<li>
+if/else conditional statements</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">27 </span>The scope of local variables</h2></summary>
+<ul>
+<li>
+What scopes are</li>
+<li>
+Where particular variables can be used and where they cannot</li>
+<li>
+What code blocks are</li>
+<li>
+What nested if statements are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">28 </span>Methods - part 1 - void methods</h2></summary>
+<ul>
+<li>
+What methods are</li>
+<li>
+How to define void methods</li>
+<li>
+The difference between defining the method and calling it</li>
+<li>
+The difference between method’s parameter and argument</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">29 </span>Methods - part 2 - non-void methods</h2></summary>
+<ul>
+<li>
+How to define non-void methods</li>
+<li>
+What the purpose of the return keyword is</li>
+<li>
+How to debug methods</li>
+<li>
+Under what circumstances we can remove the else following the if</li>
+<li>
+How to use Quick Actions and Refactorings menu</li>
+<li>
+What code refactoring is</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">30 </span>Methods - part 3 - parameters types and the return type. Static typing in C#</h2></summary>
+<ul>
+<li>
+The difference between statically and dynamically typed programming languages</li>
+<li>
+How to use the correct types of method parameters and the return type</li>
+<li>
+The difference between runtime errors and compilation errors</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">31 </span>Parsing a string to an int (int.Parse method)</h2></summary>
+<ul>
+<li>
+What parsing is</li>
+<li>
+How to convert a string to an int using the int.Parse method</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">32 </span>The first exception</h2></summary>
+<ul>
+<li>
+What exceptions are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">33 </span>Adding a new project to a solution</h2></summary>
+<ul>
+<li>
+How to add more than one project to a solution</li>
+<li>
+How to switch between projects</li>
+<li>
+Assignment - Simple Calculator- Solution</li>
+<li>
+How to perform code refactoring in practice</li>
+<li>
+How to transform a string to its uppercase version</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">34 </span>Assignment - Introduction</h2></summary>
+</details> 
+
+<details><summary> <h2><span class="lessonNum">35 </span>Assignment - Simple Calculator - Description and requirements</h2></summary>
+</details>
+
+<details><summary> <h2><span class="lessonNum">36 </span>Assignment - Simple Calculator - It's time to implement it</h2></summary>
+</details>  
+
+<details><summary>
+<h2><span class="lessonNum">37 </span>Assignment - Simple Calculator - Solution</h2>
+</summary>
+<ul>
+<li>How to perform code refactoring in practice</li>
+<li>How to transform a string to its uppercase version </li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">38 </span>String interpolation</h2></summary>
+<ul>
+<li>
+What string interpolation is, and how to use it</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">39 </span>Switch statement</h2></summary>
+<ul>
+<li>
+What switch statements are</li>
+<li>
+One of the purposes of the default keyword</li>
+<li>
+What expressions are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">40 </span>Char</h2></summary>
+<ul>
+<li>
+What chars are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">41 </span>A need for loops</h2></summary>
+<ul>
+<li>
+What loops are and what they are useful for</li>
+<li>
+What kinds of loops we can define in C#</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">42 </span>While loop - part 1</h2></summary>
+<ul>
+<li>
+How to define a while loop</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">43 </span>+= and ++ operators. Infinite loops</h2></summary>
+<ul>
+<li>
++=, *=, ++ operators</li>
+<li>
+What infinite loops are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">44 </span>While loop - part 2</h2></summary>
+<ul>
+<li>
+How to define a while loop - practice</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">45 </span>Do-while loop</h2></summary>
+<ul>
+<li>
+How to define a do-while loop</li>
+<li>
+The difference between the while and the do-while loops</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">46 </span>For loop</h2></summary>
+<ul>
+<li>
+How to define a for loop</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">47 </span>Break</h2></summary>
+<ul>
+<li>
+The purpose of the break keyword</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">48 </span>Continue</h2></summary>
+<ul>
+<li>
+The purpose of the continue keyword</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">49 </span>Nested loops</h2></summary>
+<ul>
+<li>
+What nested loops are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">50 </span>Loops performance</h2></summary>
+<ul>
+<li>
+What the performance of a program is</li>
+<li>
+How loops can affect the program’s performance</li>
+<li>
+What we can do to avoid performance degradation when using loops</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">51 </span>Arrays</h2></summary>
+<ul>
+<li>
+What arrays are</li>
+<li>
+The purpose of the index from end operator (^)</li>
+<li>
+How to easily fill a new array with items using the array initializer</li>
+<li>
+What the greatest disadvantage of arrays is</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">52 </span>Multi-dimensional arrays</h2></summary>
+<ul>
+<li>
+What multi-dimensional arrays are</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">53 </span>Foreach loop</h2></summary>
+<ul>
+<li>
+How to use the foreach loop</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">54 </span>Lists</h2></summary>
+<ul>
+<li>
+What Lists are</li>
+<li>
+The difference between Lists and arrays</li>
+<li>
+The most crucial methods we can use with Lists</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">55 </span>“out” keyword</h2></summary>
+<ul>
+<li>
+The purpose of the out keyword</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">56 </span>TryParse method</h2></summary>
+<ul>
+<li>
+How to parse a string to an int without the risk of a runtime error</li>
+<li>
+The keyboard shortcut for formatting the code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">57 </span>Assignment - TODO List - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">58 </span>Assignment - TODO List - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary> <h2><span class="lessonNum">59 </span>Assignment - TODO List - Implementation - User options & adding a TODO</h2></summary>
+<ul>
+<li>
+Practice the mechanisms learned in this section</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">60 </span>Assignment - TODO List - Implementation - Listing and Removing TODOs</h2></summary>
+<ul>
+<li>
+Practice the mechanisms learned in this section</li>
+<li>
+How to easily change a foreach loop into a for loop</li>
+</ul>
+</details>
+
+<details><summary> <h2><span class="lessonNum">61 </span>Assignment - TODO List - Refactoring</h2></summary>
+<ul>
+<li>
+How to perform code refactoring in practice</li>
+<li>
+How to easily jump to a method definition</li>
+<li>
+What the recommended order of methods in a file is</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 3 </span>Basics of Object-Oriented Programming</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">62 </span>Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">63 </span>The issues in our code. A need for object-oriented programming</h2>
+</summary>
+<ul>
+<li>
+Why we need object-oriented programming</li>
+<li>What procedural programming is and what problems it can cause</li>
+<li>What an antipattern is</li>
+<li>What spaghetti code antipattern is</li>
+<li>What high-quality code must always be ready for
+</li>
+</ul>
+</details>
+
+  <details><summary>
+<h2><span class="lessonNum">64 </span>Introduction to object-oriented programming</h2>
+</summary>
+<ul>
+<li>What object-oriented programming is</li>
+<li>What classes, objects and instances are</li>
+<li>What the benefits of object-oriented programming are</li>
+</ul>
+</details>
+  
+<details><summary>
+<h2><span class="lessonNum">65 </span>Understanding OOP with the DateTime type</h2>
+</summary>
+<ul>
+<li>How OOP can be used in practice</li>
+<li>New type: DateTime</li>
+<li>What a constructor is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">66 </span>Abstraction</h2>
+</summary>
+<ul>
+<li>What abstraction is</li>
+<li>The benefits of hiding the implementation</li>
+<li>details from the users of a class</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">67 </span>Our first class</h2>
+</summary>
+<ul>
+<li>How to define a class</li>
+<li>What the fields of a class are</li>
+<li>What the default values of fields are</li>
+<li>What a default constructor is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">68 </span>Data hiding</h2>
+</summary>
+<ul>
+<li>What data hiding is and why using it is a good idea</li>
+<li>What members of a class are<li>
+<li>What access modifiers are</li>
+<li>Public and private access modifiers</li>
+<li>What the default access modifier for fields is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">69 </span>Custom constructor</h2>
+</summary>
+<ul>
+<li>How to define custom constructors in a class</li>
+<li>What the recommended naming for fields</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">70 </span>C# restriction on code outside classes. Top-level statements</h2>
+</summary>
+<ul>
+<li>Whether C# code can be defined outside classes or if it must always be contained within one</li>
+<li>What top-level statements are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">71 </span>Adding Methods to classes</h2>
+</summary>
+<ul>
+<li>How to define methods in classes</li>
+<li>How methods should be named</li>
+<li>The rule of thumb we can use to find out what the default access modifiers in C# are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">72 </span>Encapsulation</h2>
+</summary>
+<ul>
+<li>What encapsulation is</li>
+<li>How is encapsulation different from data hiding</li>
+<li>The benefits of using encapsulation</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">73 </span>Methods overloading</h2>
+</summary>
+<ul>
+<li>
+What methods overloading is
+What rules we must follow when defining many methods with the same name in a class
+How to quickly create a constructor using Visual Studio
+<details><summary>
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">74 </span>Constructors overloading. Calling one constructor from another</h2>
+</summary>
+<ul>
+<li>
+How to overload constructors
+How to call one constructor from another using the “this” keyword
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">75 </span>Expression-bodied methods</h2>
+</summary>
+<ul>
+<li>
+How to make methods shorter by converting them to expression-bodied methods
+The difference between a statement and an expression
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">76 </span>"this" keyword (current instance reference)</h2>
+</summary>
+<ul>
+<li>
+How to use the “this” keyword to refer to the current instance of a class
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">77 </span>Optional parameters</h2>
+</summary>
+<ul>
+<li>
+How to define optional parameters
+How to set the default value of a parameter
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">78 </span>Validation of constructor parameters</h2>
+</summary>
+<ul>
+<li>
+How to validate the constructor parameters
+The purpose of the nameof expression 
+Why having public fields is risky
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">79 </span>Readonly and const</h2>
+</summary>
+<ul>
+<li>
+How to prevent a field from being modified
+What immutable objects are
+The difference between readonly and const
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">80 </span>Limitations of fields. A need for properties</h2>
+</summary>
+<ul>
+<li>
+The limitations of fields
+How can those limitations be addressed using methods
+Why we need properties
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">81 </span>Properties</h2>
+</summary>
+<ul>
+<li>
+What properties are
+What a backing field of a property is
+What accessors are
+What the differences between fields and properties are
+When should we use fields, and when properties
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">82 </span>Object initializer</h2>
+</summary>
+<ul>
+<li>
+What object initializers are
+The purpose of the init accessor
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">83 </span>Computed properties</h2>
+</summary>
+<ul>
+<li>
+How to create computed properties
+When to use parameterless methods, and when computed properties
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">84 </span>Static methods and classes</h2>
+</summary>
+<ul>
+<li>
+What static methods are
+What static classes are
+What are the limitations of static methods
+Why all const fields are implicitly static
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">85 </span>Static fields, properties and constructors</h2>
+</summary>
+<ul>
+<li>
+What static fields and properties are
+What a static constructor is
+Whether using static fields and properties is a good or bad practice
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">86 </span>Single Responsibility Principle - introduction</h2>
+</summary>
+<ul>
+<li>
+What the Single Responsibility Principle is (S in SOLID)
+What SOLID principles are
+How to read from and write to a text file
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">87 </span>Single Responsibility Principle - refactoring (part 1)</h2>
+</summary>
+<ul>
+<li>
+How to perform step-by-step refactoring of a class, so it meets the Single Responsibility Principle
+What a repository is
+What the new line symbol for Unix and non-Unix systems is
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">88 </span>Single Responsibility Principle - refactoring (part 2)</h2>
+</summary>
+<ul>
+<li>
+What is the recommended order of methods in a class
+What is the risk of having some properties public, even only for getting
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">89 </span>Single Responsibility Principle - refactoring (part 3)</h2>
+</summary>
+<ul>
+<li>
+What the DRY principle is
+When code duplications are not a bad thing
+</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">90 </span>Files, namespaces, using directives</h2>
+</summary>
+<ul>
+<li>
+How to add new files to a project
+How to move classes to their own files
+What namespaces are
+What using directives are
+What file-scoped namespace declarations are
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">91 </span>Global using directives</h2>
+</summary>
+<ul>
+<li>
+What global using directives are
+How to measure the time of code execution
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">92 </span>Assignment - Dice Roll Game - Description and requirements</h2>
+</summary>
+</details>
+ 
+<details><summary>
+<h2><span class="lessonNum">93 </span>Assignment - Dice Roll Game - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">94 </span>Assignment - Dice Roll Game - Random</h2>
+</summary>
+<ul>
+<li>How to generate pseudorandom numbers</li>
+<li>What the seed of the pseudorandom numbers generator is</li>
+<li>What a dependency of a class is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">95 </span>Assignment - Dice Roll Game - Magic Number antipattern</h2>
+</summary>
+<ul>
+<li>What the magic number antipattern is and how to avoid it</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">96 </span>Assignment - Dice Roll Game - Designing classes</h2>
+</summary>
+<ul>
+<li>How to create a neat classes design in practice</li>
+</ul>
+</details>
+
+
+<details><summary>
+<h2><span class="lessonNum">97 </span>Assignment - Dice Roll Game - Enums</h2>
+</summary>
+<ul>
+<li>What enum types are and how to declare them</li>
+<li>What the underlying type of enums is</li>
+<li>What casting is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">98 </span>Assignment - Dice Roll Game - Ternary conditional operator</h2>
+</summary>
+<ul>
+<li>How to use the ternary conditional operator</li>
+<li>How to logically place types in</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 4 </span>Object-Oriented Programming: Polymorphism, Inheritance, Interfaces</h1>
+  </summary>
+  
+  <details><summary>
+<h2><span class="lessonNum">99 </span>Section introduction</h2>
+</summary>
+<ul>
+<li>Polymorphism, Inheritance, Interfaces : Why those things are needed</li>
+<li>Design patterns + next SOLID principle</li>
+<li>How to manipulate text files </li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">100 </span>A need for polymorphism</h2>
+</summary>
+<ul>
+<li>
+Why do we sometimes need to manipulate different types in an uniform way
+</li>
+<li>
+What polymorphism is
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">101 </span>Inheritance</h2>
+</summary>
+<ul>
+<li>
+What inheritance is
+</li>
+<li>
+What kind of relationship it creates between types
+</li>
+<li>
+What base classes and derived classes are
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">102 </span>Inheriting members from the base class. Protected access modifier</h2>
+</summary>
+<ul>
+<li>
+How to make base class members accessible in the derived class
+</li>
+<li>
+The purpose of the protected access modifier
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">103 </span>Overriding members from the base class. Virtual methods and properties</h2>
+</summary>
+<ul>
+<li>
+How to override the implementation of the method or a property from a base class in the derived classes
+</li>
+<li>
+What virtual methods and properties are
+</li>
+<li>
+What method hiding is
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">104 </span>Virtual methods - practice</h2>
+</summary>
+<ul>
+<li>
+How to use virtual methods in practice
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">105 </span>A deeper inheritance hierarchy</h2>
+</summary>
+<ul>
+<li>
+In this video, we will learn How to define an inheritance hierarchy of more than two classes.
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">106 </span>Multiple inheritance</h2>
+</summary>
+<ul>
+<li>
+Why in C# a class cannot derive directly from more than one base class
+</li>
+<li>
+What the diamond problem is
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">107 </span>System.Object and the ToString method</h2>
+</summary>
+<ul>
+<li>
+What the System.Object class is and what method it contains
+</li>
+<li>
+What the ToString method is and what its basic implementation is
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">108 </span>Inheriting constructors and the "base" keyword</h2>
+</summary>
+<ul>
+<li>
+If the base class constructor is called when a derived class object is created
+</li>
+<li>
+How to create constructors that set the state defined in both the base type and the derived type
+</li>
+<li>
+The purpose of the "base" keyword
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">109 </span>Implicit conversion</h2>
+</summary>
+<ul>
+<li>
+What implicit conversion is
+</li>
+<li>
+New types: decimal and double
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">110 </span>Explicit conversion</h2>
+</summary>
+<ul>
+<li>
+What explicit conversion is
+</li>
+<li>
+What problems may it cause
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">111 </span>Upcasting and downcasting</h2>
+</summary>
+<ul>
+<li>
+The difference between upcasting and downcasting
+</li>
+<li>
+Which of them is risky
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">112 </span>"is" operator</h2>
+</summary>
+<ul>
+<li>
+The purpose of the "is" operator
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">113 </span>Null</h2>
+</summary>
+<ul>
+<li>
+What null is
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">114 </span>"as" operator</h2>
+</summary>
+<ul>
+<li>
+The purpose of the "as" operator
+</li>
+<li>
+"as" operator limitations
+</li>
+<li>
+The  difference between conversion with the cast expression, and with the "as" operator
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">115 </span>Abstract classes</h2>
+</summary>
+<ul>
+<li>
+How to prevent a class from being instantiated
+</li>
+<li>
+What abstract classes are
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">116 </span>Abstract methods</h2>
+</summary>
+<ul>
+<li>
+What abstract methods and properties are
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">117 </span>A need for abstract methods</h2>
+</summary>
+<ul>
+<li>
+Why we need abstract methods
+</li>
+<li>
+The difference between abstract and non-abstract virtual methods
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">118 </span>Sealed classes and methods</h2>
+</summary>
+<ul>
+<li>
+What sealed classes and methods are
+</li>
+<li>
+What the reasons for sealing classes and methods may be
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">119 </span>Static classes are always sealed</h2>
+</summary>
+<ul>
+<li>
+Why static classes are implicitly sealed
+</li>
+<li>
+Why overriding of static methods is not possible
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">120 </span>Extension methods</h2>
+</summary>
+<ul>
+<li>
+How to define extension methods
+</li>
+<li>
+How to create multiline string literals
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">121 </span>A need for interfaces</h2>
+</summary>
+<ul>
+<li>
+Under what circumstances using an abstract class as a base type is not a good idea
+</li>
+<li>
+Why we need interfaces
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">122 </span>Interfaces</h2>
+</summary>
+<ul>
+<li>
+What interfaces are
+</li>
+<li>
+What kind of relationship they create between types
+</li>
+<li>
+Interfaces vs abstract classes
+</li>
+<li>
+What the differences between interfaces and abstract classes are
+</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">123 </span>Interfaces vs abstract classes</h2>
+</summary>
+<ul>
+<li>What the differences between interfaces and abstract classes are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">124 </span>JSON</h2>
+</summary>
+<ul>
+<li>What JSON and XML are</li>
+<li>How to serialize a C# object to JSON format, and how to deserialize JSON string to a c# object</li>
+<li>How to escape the quote character in a string</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">125 </span>Assignment - Cookies Cookbook - Description and requirements </h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">126 </span>Assignment - Cookies Cookbook - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">127 </span>Assignment - Cookies Cookbook - High-level design</h2>
+</summary>
+<ul>
+<li>How to define the high-level logic of the application</li>
+<li>How to easily create well-designed interfaces</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">128 </span>Assignment - Cookies Cookbook - Dependency Inversion and Dependency Injection</h2>
+</summary>
+<ul>
+<li>What the Dependency Inversion Principle is (D in SOLID)</li>
+<li>What Dependency Injection is, and how it is different from Dependency Inversion</li>
+<li>What coupling is</li>
+<li>What target-typed new expressions are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">129 </span>Assignment - Cookies Cookbook - Designing data types</h2>
+</summary>
+<ul>
+<li>What generic types and methods are</li>
+<li>What the IEnumerable interface is</li>
+<li>How to reduce code repetition between related types in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">130 </span>Assignment - Cookies Cookbook - Printing data object. LINQ.</h2>
+</summary>
+<ul>
+<li>What LINQ is</li>
+<li>How  to access the index of the current iteration in a foreach loop</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">131 </span>Assignment - Cookies Cookbook - Printing the ingredients</h2>
+</summary>
+<ul>
+<li>How to create a basic storage class for objects of a given type</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">132 </span>Assignment - Cookies Cookbook - Composing the recipe by the user</h2>
+</summary>
+<ul>
+<li>How to find an item in a collection by one of its properties</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">133 </span>Assignment - Cookies Cookbook - Reading and writing from and to a *.txt file</h2>
+</summary>
+<ul>
+<li>How to implement reading from and writing to a *.txt file</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">134 </span>Assignment - Cookies Cookbook - Reading and writing from and to a *.json file</h2>
+</summary>
+<ul>
+<li>How to implement reading from and writing to a *.json file</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">135 </span>Assignment - Cookies Cookbook - Template Method Design Pattern</h2>
+</summary>
+<ul>
+<li>What the Template Method design pattern is, and how to use it in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">136 </span>Assignment - Cookies Cookbook - Cleanup and project organizing</h2>
+</summary>
+<ul>
+<li>How to organize a project into namespaces in practice</li>
+<li>How to apply some action in the Visual Studio for the entire project</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 5 </span>Exceptions and error handling</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">137 </span>Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">138 </span>Exception object</h2>
+</summary>
+<ul>
+<li>What exceptions are</li>
+<li>What the System.Exception class is and what data it contains</li>
+<li>How to see detailed information about an exception that occurred in our code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">139 </span>Stack trace</h2>
+</summary>
+<ul>
+<li>What stack trace is and how it is useful</li>
+<li>Why unhandled exceptions are bad news</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">140 </span>Handling exceptions. Try-catch-finally</h2>
+</summary>
+<ul>
+<li>How to handle exceptions with the try-catch-finally blocks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">141 </span>Multiple catch blocks</h2>
+</summary>
+<ul>
+<li>How to catch exceptions of a specific type</li>
+<li>How to define multiple catch blocks for a single try block</li>
+<li>Why the order of catch blocks matter</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">142 </span>Throwing exceptions explicitly</h2>
+</summary>
+<ul>
+<li>How to throw exceptions from our code explicitly</li>
+<li>How throwing an exception allows us not to return a value from a method</li>
+<li>When throwing an exception is a good design choice</li>
+<li>How to define valuable exception messages</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">143 </span>Built-in exception types</h2>
+</summary>
+<ul>
+<li>What are some of the built-in exception types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">144 </span>StackOverflowException. Recursive methods</h2>
+</summary>
+<ul>
+<li>What StackOverflowException is</li>
+<li>What recursive methods are</li>
+<li>What risks may recursive methods cause and how they can be mitigated</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">145 </span>Precise exceptions</h2>
+</summary>
+<ul>
+<li>Why it is important to be precise when using exceptions</li>
+<li>Why in most cases, we should avoid throwing and catching the base SystemException type.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">146 </span>Rethrowing exceptions. Throw vs throw ex</h2>
+</summary>
+<ul>
+<li>What rethrowing exceptions is</li>
+<li>What the difference between "throw" and "throw ex" is, and which one we should use</li>
+<li>Why the InnerException property is so important</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">147 </span>Rethrowing a System.Exception object</h2>
+</summary>
+<ul>
+<li>How to manage exceptions if we don't know exactly what exceptions can be thrown from some code</li>
+<li>What might be a good reason to catch the exception of the System.Exception type</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">148 </span>Global try-catch block</h2>
+</summary>
+<ul>
+<li>What a global try-catch block is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">149 </span>Code inside the catch block</h2>
+</summary>
+<ul>
+<li>What code we should and what we should not put into the catch block</li>
+<li>What happens if an exception is thrown from a catch block</li>
+<li>What nested try-catch blocks are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">150 </span>Exception filters</h2>
+</summary>
+<ul>
+<li>What exception filters are</li>
+<li>How exception filters can let us better control what exceptions will be processed by a catch block</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">151 </span>Custom exceptions</h2>
+</summary>
+<ul>
+<li>How to define custom exceptions</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">152 </span>When to use custom exceptions</h2>
+</summary>
+<ul>
+<li>When we should define custom exceptions</li>
+<li>What the Principle of least surprise is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">153 </span>Exceptions as a hidden part of a method signature</h2>
+</summary>
+<ul>
+<li>That exceptions that a method may throw are, in a way, a hidden part of this method's signature</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">154 </span>Two extreme schools of using exceptions</h2>
+</summary>
+<ul>
+<li>What the drawbacks of using exceptions are</li>
+<li>What the goto statement is and why using it is considered a bad idea</li>
+<li>What the alternatives for using exceptions are</li>
+<li>What issues we can have if we decide not to use exceptions at all</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">155 </span>Smart usage of exceptions - throw</h2>
+</summary>
+<ul>
+<li>How to be smart about using exceptions</li>
+<li>when throwing exceptions explicitly from our code is a good idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">156 </span>Smart usage of exceptions - catch</h2>
+</summary>
+<ul>
+<li>How to use the catch block smartly</li>
+<li>When we should put code in a try-catch block</li>
+<li>What a catch block should do</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">157 </span>Assignment - Game Data Parser - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">158 </span>Assignment - Game Data Parser - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">159 </span>Assignment - Game Data Parser - Sunny day scenario</h2>
+</summary>
+<ul>
+<li>How to quickly build C# classes based on types defined in JSON</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">160 </span>Assignment - Game Data Parser - Flow controlled by exceptions</h2>
+</summary>
+<ul>
+<li>How exceptions can control the flow of the application</li>
+<li>How to use the "default" keyword to assign a default value to a variable of any type</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">161 </span>Assignment - Game Data Parser - Adding details to JsonException</h2>
+</summary>
+<ul>
+<li>How to wrap existing exceptions into new ones</li>
+<li>How to change the font color in console applications</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">162 </span>Assignment - Game Data Parser - Custom logger</h2>
+</summary>
+<ul>
+<li>How to create a simple exceptions logger</li>
+<li>What are some of the logging libraries for .NET</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">163 </span>Assignment - Game Data Parser - Fewer exceptions</h2>
+</summary>
+<ul>
+<li>How can the number of try-catch block in an application be reduced</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">164 </span>Assignment - Game Data Parser - Refactoring - Extracting methods</h2>
+</summary>
+<ul>
+<li>How to extract smaller, more focused methods from a single, big method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">165 </span>Assignment - Game Data Parser - Refactoring - SRP, DI, and classes decoupling</h2>
+</summary>
+<ul>
+<li>How to refactor the code to meet Single Responsibility Principle and the Dependency Inversion Principle</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 6 </span>Generic types & advanced use of methods</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">166 </span>Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">167 </span>Introduction to generic types</h2>
+</summary>
+<ul>
+<li>What generic types are and what their purpose</li>
+<li>Understanding how List works under the hood</li>
+<li>How the List works under the hood</li>
+<li>What operations can negatively impact the List's performance</li>
+<li>What data structures are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">168 </span>Understanding how List works under the hood</h2>
+</summary>
+<ul>
+<li>How the List works under the hood</li> 
+<li>What operations can negatively impact the List's performance</li>
+<li>What data structures are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">169 </span>Simplified List (adding a new item)</h2>
+</summary>
+<ul>
+<li>How to implement a simplified List</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">170 </span>Simplified List (deleting an item at a given index)</h2>
+</summary>
+<ul>
+<li>How to implement a simplified List</li>
+<li>What indexers are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">171 </span>A need for generic types. Implementing a generic type</h2>
+</summary>
+<ul>
+<li>Why generic types are a crucial part of the language</li>
+<li>How to create generic types</li>
+<li>The purpose of the default keyword</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">172 </span>A need for tuples</h2>
+</summary>
+<ul>
+<li>How to handle a situation when we want to return more than one result from a method</li>
+<li>What an algorithm is</li>
+<li>How to implement an algorithm for finding a minimal and maximal number in a collection</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">173 </span>Tuples</h2>
+</summary>
+<ul>
+<li>How to define generic types in practice</li>
+<li>How to implement a custom tuple</li>
+<li>How to use build-in tuples</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">174 </span>C# without generics. ArrayList</h2>
+</summary>
+<ul>
+<li>How programmers used to manage their code when generics were not a part of C#</li>
+<li>What an ArrayList is and what issues it can cause</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">175 </span>Generic methods</h2>
+</summary>
+<ul>
+<li>How to define generic methods</li>
+<li>How the compiler infers the type parameter from the context in which some method is used</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">176 </span>Generic methods with multiple type parameters</h2>
+</summary>
+<ul>
+<li>How to define generic methods with more than one type parameters</li>
+<li>How to convert the collection of one type into a collection of another type</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">177 </span>Convert.ChangeType method. Typeof keyword and the Type object</h2>
+</summary>
+<ul>
+<li>How to convert objects of any type into objects of any other type</li>
+<li>What the Type class is</li>
+<li>The purpose of the "typeof" keyword and the GetType method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">178 </span>A need for type constraints</h2>
+</summary>
+<ul>
+<li>What type constraints are and what their purpose is</li>
+<li>The purpose of the "where" keyword</li>
+<li>How the parameterless constructor constraint works</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">179 </span>Improving the performance of the List. Measuring the time of the method's execution</h2>
+</summary>
+<ul>
+<li>How we can improve the performance of a list to which many items are added one by one</li>
+<li>How to measure the time of the code execution using the Stopwatch class</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">180 </span>Type constraints - the constraint on the base type</h2>
+</summary>
+<ul>
+<li>More about type constraints</li>
+<li>How we can limit the generic type arguments only to types derived from a certain base class</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">181 </span>IComparable interface. Ordering objects</h2>
+</summary>
+<ul>
+<li>How to sort Lists of various types</li>
+<li>What the IComparable&lt;T&gt; interface is and how to implement it</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">182 </span>Type constraints - the constraint on the implemented interface</h2>
+</summary>
+<ul>
+<li>How we can limit the generic type arguments only to types implementing a certain interface</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">183 </span>Type constraints - numeric types. Generic math</h2>
+</summary>
+<ul>
+<li>What type constraint allows us to limit the type argument to only numeric types</li>
+<li>What the generic math feature is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">184 </span>Type constraints - summary. Multiple type constraints</h2>
+</summary>
+<ul>
+<li>How to define multiple constraints for a single type parameter</li>
+<li>How to manage constraints for multiple generic type parameters.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">185 </span>Advanced use of methods - introduction</h2>
+</summary>
+<ul>
+<li>storing methods In variables</li>
+<li>passing methods as parameters</li>
+<li>Func and Action classes</li>
+<li>delegates</li>
+<li>lambda expressions</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">186 </span>Funcs and Actions</h2>
+</summary>
+<ul>
+<li>How we can assign methods to variables</li>
+<li>What Funcs and Actions are</li>
+<li>How Funcs and Actions can help us reduce code repetitions</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">187 </span>Lambda expressions</h2>
+</summary>
+<ul>
+<li>What lambda expressions are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">188 </span>Delegates</h2>
+</summary>
+<ul>
+<li>What delegates are</li>
+<li>The difference between delegates and Funcs or Actions</li>
+<li>What a multicast delegate is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">189 </span>Dictionary - introduction</h2>
+</summary>
+<ul>
+<li>What Dictionaries are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">190 </span>Dictionary - practice</h2>
+</summary>
+<ul>
+<li>How to use Dictionaries in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">191 </span>A need for the Strategy design pattern</h2>
+</summary>
+<ul>
+<li>What code could benefit from using the Strategy design pattern</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">192 </span>Refactoring the code using Funcs and lambda expressions</h2>
+</summary>
+<ul>
+<li>How to refactor the code using Funcs and lambda expressions</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">193 </span>Open-Closed Principle. Strategy design pattern</h2>
+</summary>
+<ul>
+<li>What the Strategy design pattern is</li>
+<li>What the Open-Closed Principle is (O in SOLID)</li>
+<li>How to use Funcs, Dictionaries and generic methods in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">194 </span>Generic filtering of collections</h2>
+</summary>
+<ul>
+<li>How to access the collections of keys of a Dictionary</li>
+<li>How to define generic methods in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">195 </span>Caching</h2>
+</summary>
+<ul>
+<li>What caching is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">196 </span>Assignment - Custom Cache - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">197 </span>Assignment - Custom Cache - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">198 </span>Assignment - Custom Cache - Implementation</h2>
+</summary>
+<ul>
+<li>How to implement a simple caching mechanism</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">199 </span>Assignment - Custom Cache - Decorator design pattern</h2>
+</summary>
+<ul>
+<li>What the Decorator design pattern is</li>
+<li>How it can help us follow the Open-Closed Principle</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">200 </span>Assignment - Custom Cache - Composing many Decorators together</h2>
+</summary>
+<ul>
+<li>How we can compose many decorators together to add more than one feature to a decorated object</li>
+</ul>
+</details> 
+</details>
+
+<details><summary>
+<h1><span class="section">Section 7 </span>LINQ</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">201</span> Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">202</span> What is LINQ?</h2>
+</summary>
+<ul>
+<li>What LINQ is</li>
+<li>What the benefits of using it are</li>
+<li>What LINQ queries look like</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">203</span> LINQ and extension methods</h2>
+</summary>
+<ul>
+<li>How it is possible that we can call the same LINQ methods on different types of collections</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">204</span> LINQ, IEnumerable and method chaining</h2>
+</summary>
+<ul>
+<li>What is the relation between LINQ and IEnumerable interface</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">205</span> Deferred execution</h2>
+</summary>
+<ul>
+<li>What deferred execution is</li>
+<li>How it can improve the performance of our applications</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">206</span> Any</h2>
+</summary>
+<ul>
+<li>How to use the Any method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">207</span> All</h2>
+</summary>
+<ul>
+<li>How to use the All method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">208</span> Count</h2>
+</summary>
+<ul>
+<li>How to use the Count and LongCount methods from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">209</span> Contains</h2>
+</summary>
+<ul>
+<li>How to use the Contains method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">210</span> OrderBy</h2>
+</summary>
+<ul>
+<li>How to use the OrderBy, OrderByDescending, ThenBy, ThenByDescending methods from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">211</span> First and Last</h2>
+</summary>
+<ul>
+<li>How to use the First and Last methods from LINQ (along with FirstOrDefault and LastOrDefault)</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">212</span> Where</h2>
+</summary>
+<ul>
+<li>How to use the Where method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">213</span> Distinct</h2>
+</summary>
+<ul>
+<li>How to use the Select method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">214</span> Select</h2>
+</summary>
+<ul>
+<li>How to use the Select method from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">215</span> Average. Anonymous types</h2>
+</summary>
+<ul>
+<li>What anonymous types are</li>
+<li>How they can be used with LINQ</li>
+<li>How to calculate the average value in a collection of numbers</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">216</span> Assignment - Refactoring to LINQ - Description and requirements</h2>
+</summary> 
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">217</span> Assignment - Refactoring to LINQ - It's time for you to try to solve it</h2>
+</summary> 
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">218</span> Assignment - Refactoring to LINQ - Nested loop and code readability</h2>
+</summary>
+<ul>
+<li>How to refactor code to use LINQ</li>
+<li>Whether making code shorter is always a good idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">219</span> Assignment - Refactoring to LINQ - Find and Replace Windows</h2>
+</summary>
+<ul>
+<li>How to use the Find and Replace tool to perform an advanced search of a given phrase</li>
+<li>How to rearrange Visual Studio windows</li>
+<li>What regular expressions are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">220</span> Assignment - Refactoring to LINQ - Fewer loops & multiline strings formatting</h2>
+</summary>
+<ul>
+<li>How to refactor loops using LINQ queries</li>
+<li>Why we must be careful when formatting the code using multiline string literals</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">221</span> Assignment - Refactoring to LINQ - Checking if collection has duplicates</h2>
+</summary>
+<ul>
+<li>How to find an item matching a given predicate with LINQ (practice)</li>
+<li>How to reduce the number of times LINQ iterates an input collection</li>
+<li>How to check if a collection contains any duplicated elements</li>
+</ul>
+</details> 
+</details>
+
+<details><summary>
+<h1><span class="section">Section 8 </span>.NET under the hood</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">223</span> Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">224</span> .NET and C#</h2>
+</summary>
+<ul>
+<li>What .NET is and how it is different from C#</li>
+<li>What are the examples of .NET-compatible programming languages</li>
+<li>What are the examples of .NET-related technologies</li>
+<li>What the differences between .NET Framework, .NET Core and .NET are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">225</span> Common Intermediate Language (CIL)</h2>
+</summary>
+<ul>
+<li>What the Common Intermediate Language is</li>
+<li>How and when it is compiled into binary code by the Just-in-Time compiler</li>
+<li>How can C# code can communicate with other .NET-compatible languages</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">226</span> Common Language Runtime (CLR)</h2>
+</summary>
+<ul>
+<li>What the Common Language Runtime (CLR) is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">227</span> Memory of a program. The stack and the heap</h2>
+</summary>
+<ul>
+<li>How memory is organized in .NET applications</li>
+<li>What the stack and the heap are and what the difference between them is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">228</span> Value semantics vs reference semantics</h2>
+</summary>
+<ul>
+<li>What value semantics and reference semantics are.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">229</span> Value types vs reference types</h2>
+</summary>
+<ul>
+<li>What the difference between value types and reference types is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">230</span> Value types vs reference types - practical tips</h2>
+</summary>
+<ul>
+<li>How to use value and reference types in practice</li>
+<li>What an impact of changing a class to a struct may be</li>
+<li>What some of the benefits of using immutable types may be</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">231</span> “ref” keyword</h2>
+</summary>
+<ul>
+<li>What the purpose of the “ref” modifier is</li>
+<li>What the difference between “ref” and “out” modifiers is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">232</span> Using “ref” with reference types</h2>
+</summary>
+<ul>
+<li>How the “ref” modifier can be used with parameters of reference types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">233</span> Unified type system. A need for boxing and unboxing</h2>
+</summary>
+<ul>
+<li>What a unified type system is in C# and why it is so important</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">234</span> Boxing and unboxing</h2>
+</summary>
+<ul>
+<li>What boxing and unboxing are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">235</span> Boxing and unboxing - performance cost</h2>
+</summary>
+<ul>
+<li>What the performance impact of boxing and unboxing is</li>
+<li>What the size of a reference is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">236</span> Garbage Collector - introduction</h2>
+</summary>
+<ul>
+<li>What Garbage Collector is</li>
+<li>Under what circumstances it may be triggered to start its work</li>
+<li>How it can affect the performance of our applications</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">237</span> Garbage Collector - Memory fragmentation and defragmentation</h2>
+</summary>
+<ul>
+<li>What memory fragmentation is</li>
+<li>How it can be fixed in a process called defragmentation</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">238</span> Garbage Collector - The Mark-And-Sweep algorithm</h2>
+</summary>
+<ul>
+<li>How the Garbage Collector decides what objects can be removed from memory using the Mark-and-Sweep algorithm</li>
+<li>What Reference counting is and what disadvantages it has</li>
+<li>What a circular reference is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">239</span> Garbage Collector - Generations of objects</h2>
+</summary>
+<ul>
+<li>What generations of objects are</li>
+<li>How they improve the performance of the Garbage Collector</li>
+<li>What the Large Objects Heap is</li>
+<li>What it means that an object is pinned</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">240</span> Memory Leaks</h2>
+</summary>
+<ul>
+<li>What memory leaks are</li>
+<li>How having static fields in classes may cause the risk of memory leaks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">241</span> Finalizers</h2>
+</summary>
+<ul>
+<li>What destructors (also known as finalizers) are</li>
+<li>When we should define them</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">242</span> Dispose method - introduction</h2>
+</summary>
+<ul>
+<li>What he purpose of the Dispose method coming from the IDisposable interface is</li>
+<li>What managed and unmanaged resources are.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">243</span> Dispose method - writing to a file with the StreamWriter</h2>
+</summary>
+<ul>
+<li>How to create a class that writes to a file using the StreamWriter class</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">244</span> Dispose method - reading from a file with the StreamReader</h2>
+</summary>
+<ul>
+<li>How to use the StreamWriter class to read from a file</li>
+<li>Why disposing of unmanaged resources is so critical</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">245</span> Dispose method - implementation</h2>
+</summary>
+<ul>
+<li>How to use the Dispose method to free unmanaged resources</li>
+<li>What using statement is</li>
+<li>What syntactic sugar is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">246</span> CSV Files</h2>
+</summary>
+<ul>
+<li>What CSV files are</li>
+<li>Why there is a significant chance you will work with them one day</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">247</span> Reading CSV files</h2>
+</summary>
+<ul>
+<li>How to create a simple class that can load data from a CSV file</li>
+<li>How to use StreamReader in practice</li>
+<li>Why the backslash ( \ ) is a special character and how it can allow us to escape other special characters in strings</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">248</span> Assignment - CSV Processing Improvements - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">249</span> Assignment - CSV Processing Improvements - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">250</span> Assignment - CSV Processing Improvements - Code analysis & tips</h2>
+</summary>
+<ul>
+<li>What the existing code in the assignment solution does</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">251</span> Assignment - CSV Processing Improvements - Reducing the size of Dictionaries</h2>
+</summary>
+<ul>
+<li>How we can reduce the size of a Dictionary representing a row in a CSV</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">252</span> Assignment - CSV Processing Improvements - Reducing the number of boxings</h2>
+</summary>
+<ul>
+<li>How to reduce the number of boxing operations in an application</li>
+<li>Why some performance improvements only make sense for specific input data</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">253</span> Assignment - CSV Processing Improvements - Analysis</h2>
+</summary>
+<ul>
+<li>That when making performance improvements, we must be aware of both the nature of the data we operate on and the users' expectations</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 9 </span>Advanced C# types</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">254</span> Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">255</span> Reflection</h2>
+</summary>
+<ul>
+<li>What reflection is and what it is useful for</li>
+<li>How to use the Type object in practice</li>
+<li>What the upsides and downsides of reflection are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">256</span> Attributes</h2>
+</summary>
+<ul>
+<li>What attributes are and how to use them</li>
+<li>How to define a custom attribute</li>
+<li>How to use reflection in practice</li>
+<li>What metadata is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">257</span> Limitations of attributes parameters types</h2>
+</summary>
+<ul>
+<li>The limitations of attributes parameters types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">258</span> Structs</h2>
+</summary>
+<ul>
+<li>What structs are and how they differ from classes</li>
+<li>Why structs should rather be small</li>
+<li>How to define type constraints to only allow using value types or reference types as a generic type parameter</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">259</span> Structs vs classes - crucial differences</h2>
+</summary>
+<ul>
+<li>The most crucial differences between structs and classes</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">260</span> Structs vs classes - low-level differences</h2>
+</summary>
+<ul>
+<li>What the low-level differences between classes and structs are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">261</span> Choosing between structs and classes</h2>
+</summary>
+<ul>
+<li>When we should use classes and when we should use structs</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">262</span> Why should we make structs immutable?</h2>
+</summary>
+<ul>
+<li>Why making structs immutable is a good idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">263</span> Non-destructive mutation</h2>
+</summary>
+<ul>
+<li>What non-destructive mutation is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">264</span> “With” expression</h2>
+</summary>
+<ul>
+<li>How to use the "with" expression to perform non-destructive mutation</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">265</span> Readonly structs</h2>
+</summary>
+<ul>
+<li>How to enforce the immutability of a struct</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">266</span> A close look at the System.Object type. The ReferenceEquals method.</h2>
+</summary>
+<ul>
+<li>What methods we can call on any object in C#</li>
+<li>What the ReferenceEquals method does</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">267</span> Equals method</h2>
+</summary>
+<ul>
+<li>What the Equals method from the System.Object type is</li>
+<li>What its default behavior for value and reference types is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">268</span> Overriding the Equals method in classes</h2>
+</summary>
+<ul>
+<li>How to override the Equals method in classes</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">269</span> Overriding the Equals method in structs</h2>
+</summary>
+<ul>
+<li>What may be the reasons for overriding the Equals method in structs</li>
+<li>How to generate the Equals method override with the help of Visual Studio</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">270</span> IEquatable<T> interface</h2>
+</summary>
+<ul>
+<li>What the IEquatable<T> interface is and why we should bother implementing it</li>
+<li>How it is different from the IComparable<T> interface</li>
+<li>What happens if there are two methods with the same name in a type, which could both be used with a given argument</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">271</span> == operator</h2>
+</summary>
+<ul>
+<li>What the == operator does</li>
+<li>How its behavior differs for value and reference type</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">272</span> Operators overloading</h2>
+</summary>
+<ul>
+<li>How operator overloading works in C#</li>
+<li>How to overload the +, ==, != operators</li>
+<li>Which operators can be overloaded, and which cannot</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">273</span> Overloading of implicit and explicit conversion operators</h2>
+</summary>
+<ul>
+<li>What implicit and explicit conversion operators are and how to overload them</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">274</span> Hash functions</h2>
+</summary>
+<ul>
+<li>What hash functions are and how they relate to the GetHashCode method</li>
+<li>What the characteristics of a good hash function are</li>
+<li>What hash conflict is and why it is inevitable</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">275</span> Default implementation of the GetHashCode method</h2>
+</summary>
+<ul>
+<li>What the default implementation of the GetHashCode method is for value and reference types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">276</span> When to override the GetHashCode method</h2>
+</summary>
+<ul>
+<li>When we should override the default implementation of the GetHashCode method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">277</span> Overriding the GetHashCode method</h2>
+</summary>
+<ul>
+<li>How to override the GetHashCode method in our types</li>
+<li>How to use the HashCode.Combine method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">278</span> ValueTuples</h2>
+</summary>
+<ul>
+<li>What ValueTuples are and how they are different from tuples</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">279</span> Benefits of immutable types</h2>
+</summary>
+<ul>
+<li>The benefits of using immutable types</li>
+<li>What pure functions are</li>
+<li>The downsides of using immutable types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">280</span> Records</h2>
+</summary>
+<ul>
+<li>What records and positional records are</li>
+<li>What the benefit of using them is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">281</span> Record structs</h2>
+</summary>
+<ul>
+<li>What record structs are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">282</span> Nullable value types</h2>
+</summary>
+<ul>
+<li>What nullable value types are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">283</span> Nullable reference types</h2>
+</summary>
+<ul>
+<li>What nullable reference types are</li>
+<li>What code review is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">284</span> Null-forgiving operator</h2>
+</summary>
+<ul>
+<li>The purpose of the null-forgiving operator</li>
+<li>How the warnings shown in the Visual Studio can help us improve our code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">285</span> Using nullable reference types. Generic type constraints related to nullability</h2>
+</summary>
+<ul>
+<li>When to use nullable reference types</li>
+<li>How to disable or enable this feature in specific parts of the code using preprocessor directives</li>
+<li>The generic type constraints for nullable and non-nullable types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">286</span> APIs</h2>
+</summary>
+<ul>
+<li>What APIs are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">287</span> Querying an API using C#</h2>
+</summary>
+<ul>
+<li>How to read data from a public API in our C# programs</li>
+<li>How to use asynchronous methods and how to await their execution</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">288</span> A class for querying APIs</h2>
+</summary>
+<ul>
+<li>How to create a class that reads JSON strings from any open API</li>
+<li>The limitations of using the await keyword and how to make a method asynchronous</li>
+<li>Deserializing JSON data to C# objects in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">289</span> Assignment - Star Wars Planets Stats - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">290</span> Assignment - Star Wars Planets Stats - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">291</span> Assignment - Star Wars Planets Stats - JsonPropertyAttribute and DTOs</h2>
+</summary>
+<ul>
+<li>The role of the JsonPropertyName attribute</li>
+<li>What DTOs are</li>
+<li>How to use Quick Actions shortcut</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">292</span> Assignment - Star Wars Planets Stats - Exceptions handling</h2>
+</summary>
+<ul>
+<li>Handling exceptions in our apps in practice</li>
+<li>How to quickly find out what exceptions may be thrown by a method</li>
+<li>What documentation comments are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">293</span> Assignment - Star Wars Planets Stats - Type design</h2>
+</summary>
+<ul>
+<li>How to design the types our programs use</li>
+<li>How to use the QuickWatch window</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">294</span> Assignment - Star Wars Planets Stats - Converting DTO to a custom type</h2>
+</summary>
+<ul>
+<li>Overloading the explicit conversion operator in practice</li>
+<li>Why we shouldn't mingle the types coming from the API with our custom types (and how it can be avoided)</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">295</span> Assignment - Star Wars Planets Stats - Finishing the app and the MaxBy method</h2>
+</summary>
+<ul>
+<li>How to use the MaxBy and MinBy methods from LINQ</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">296</span> Assignment - Star Wars Planets Stats - Refactoring</h2>
+</summary>
+<ul>
+<li>How to use the messages related to the code analysis performed by Visual Studio</li>
+<li>The purpose of the null-coalescing assignment operator.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">297</span> Assignment - Star Wars Planets Stats - Splitting the class</h2>
+</summary>
+<ul>
+<li>How to split a class into smaller classes, to make it compliant with the Single Responsibility Principle</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">298</span> Assignment - Star Wars Planets Stats - Universal table printer</h2>
+</summary>
+<ul>
+<li>Using reflection in practice</li>
+<li>How to format strings</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 10 </span>Collections</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">299</span> Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">300</span> The role of the IEnumerable interface</h2>
+</summary>
+<ul>
+<li>What the main interfaces related to collections are</li>
+<li>What the role of the IEnumerable interface is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">301</span> A close look at the IEnumerable interface</h2>
+</summary>
+<ul>
+<li>What methods are defined in the IEnumerable interface</li>
+<li>How they are used when a foreach loop is executed</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">302</span> Implementing IEnumerable</h2>
+</summary>
+<ul>
+<li>How to implement the IEnumerable interface in custom collections</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">303</span> Implicit and explicit interface implementation</h2>
+</summary>
+<ul>
+<li>What methods are required by the IEnumerable<T> interface</li>
+<li>What Implicit and explicit interface implementations are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">304</span> Implementing IEnumerable&lt;T&gt;</h2>
+</summary>
+<ul>
+<li>How to implement the IEnumerable<T> interface</li>
+<li>What backward compatibility is</li>
+<li>What named arguments are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">305</span> Indexers</h2>
+</summary>
+<ul>
+<li>What indexers are and how to define custom indexers</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">306</span> Collection initializers</h2>
+</summary>
+<ul>
+<li>How to implement collection initializers in our custom collection</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">307</span> ICollection and IList interfaces</h2>
+</summary>
+<ul>
+<li>About two interfaces related to collections - ICollection and IList interfaces</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">308</span> Breaking the Interface Segregation Principle</h2>
+</summary>
+<ul>
+<li>What happens if a type is forced to implement an interface that it cannot implement in any reasonable way</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">309</span> Interface Segregation Principle</h2>
+</summary>
+<ul>
+<li>What the Interface Segregation Principle is (I in SOLID)</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">310</span> The benefits of readonly collections</h2>
+</summary>
+<ul>
+<li>What readonly collections are and what the benefits of using them are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">311</span> Readonly collections. ReadOnlyCollection and ReadOnlyDictionary</h2>
+</summary>
+<ul>
+<li>How a collection can be made readonly</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">312</span> Big O Notation</h2>
+</summary>
+<ul>
+<li>What Big O notation is</li>
+<li>How it can help us understand the complexity of an algorithm</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">313</span> Binary search algorithm</h2>
+</summary>
+<ul>
+<li>How the binary search algorithm works</li>
+<li>What Divide-and-conquer strategy for solving problems is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">314</span> Binary search algorithm - implementation</h2>
+</summary>
+<ul>
+<li>How to implement the binary search algorithm in C#</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">315</span> Binary search algorithm - complexity</h2>
+</summary>
+<ul>
+<li>What the time complexity of the binary search algorithm is</li>
+<li>What the logarithmic complexity is</li>
+<li>Why using binary search may be a good idea</li>
+<li>How to use the built-in version of this algorithm</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">316</span> Improving performance when using Lists</h2>
+</summary>
+<ul>
+<li>Tips for improving code performance when using Lists</li>
+<li>How to generate a collection of numbers using Enumerable.Range method</li>
+<li>How to write long numbers in a readable way</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">317</span> Linked list</h2>
+</summary>
+<ul>
+<li>What linked lists are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">318</span>Linked list vs List</h2>
+<ul>
+<li>How basic operations differ for Linked lists and lists</li>
+<li>What the performance differences between those data structures are</li>
+<li>When to use Lists, and when Linked lists</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">319</span> Dictionaries under the hood</h2>
+</summary>
+<ul>
+<li>How Dictionaries work under the hood</li>
+<li>What hash tables are</li>
+<li>Why overriding the GetHashCode and Equals methods together is so important</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">320</span> Performance of Dictionaries</h2>
+</summary>
+<ul>
+<li>What the performance of basic operations performed on Dictionaries is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">321</span> HashSet</h2>
+</summary>
+<ul>
+<li>What HashSets are and what the use cases for them may be</li>
+<li>How to remove the duplicates from a collection efficiently</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">322</span> Queue</h2>
+</summary>
+<ul>
+<li>What queues are</li>
+<li>What FIFO stands for</li>
+<li>What priority queues are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">323</span> Stack</h2>
+</summary>
+<ul>
+<li>What stacks are</li>
+<li>What LIFO stands for</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">324</span> "Params" keyword</h2>
+</summary>
+<ul>
+<li>The purpose of the "params" keyword</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">325</span> A need for yield statement</h2>
+</summary>
+<ul>
+<li>What may be the use cases for yield statements</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">326</span> yield statement - behavior analysis</h2>
+</summary>
+<ul>
+<li>How the code using yield statements behaves</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">327</span> yield statement and iterators</h2>
+</summary>
+<ul>
+<li>How the yield statement works</li>
+<li>What the role of iterators is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">328</span> yield statement - practice. yield break statement</h2>
+</summary>
+<ul>
+<li>How to use iterators in practice</li>
+<li>The purpose of the yield break statement</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">329</span> Implementing IEnumerable interface using iterators</h2>
+</summary>
+<ul>
+<li>How to implement the IEnumerable interface using iterators</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">330</span> Assignment - Custom Linked List - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">331</span> Assignment - Custom Linked List - It's time for you to try to solve it</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">332</span> Assignment - Custom Linked List - Data Structures</h2>
+</summary>
+<ul>
+<li>How to implement the Node data structure required by the linked list</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">333</span> Assignment - Custom Linked List - The AddToFront method</h2>
+</summary>
+<ul>
+<li>How to implement adding new items to the front of the linked list</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">334</span> Assignment - Custom Linked List - Implementing IEnumerable</h2>
+</summary>
+<ul>
+<li>How to implement the GetEnumerator method using iterators in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">335</span> Assignment - Custom Linked List - Adding new items at the end of the list</h2>
+</summary>
+<ul>
+<li>How to implement the Add and AddToEnd methods for a linked list</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">336</span> Assignment - Custom Linked List - The Clear method</h2>
+</summary>
+<ul>
+<li>How to implement the Clear method for a linked list</li>
+<li>Why it is a bad idea to modify a collection that is being iterated</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">337</span> Assignment - Custom Linked List - Removing items and the Contains method</h2>
+</summary>
+<ul>
+<li>How to implement the Remove and Contains methods for a linked list</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">338</span> Assignment - Custom Linked List - The CopyTo method</h2>
+</summary>
+<ul>
+<li>How to implement the CopyTo method for a linked list</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">339</span> Assignment - Custom Linked List - Summary and performance review. Private classes</h2>
+</summary>
+<ul>
+<li>How the implemented SinglyLinkedList differs from the built-in LinkedList</li>
+<li>What nested classes and private classes are</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 11 </span>Projects, assemblies, solutions</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">340</span> Section introduction</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">341</span> Projects and solutions</h2>
+</summary>
+<ul>
+<li>About C# projects and solutions</li>
+<li>How to add more than one project to the solution</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">342</span> Project properties</h2>
+</summary>
+<ul>
+<li>What the project's properties are and how we can change them</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">343</span> Debug build vs Release build</h2>
+</summary>
+<ul>
+<li>The difference between Debug and Release builds</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">344</span> Assemblies</h2>
+</summary>
+<ul>
+<li>What assemblies are</li>
+<li>What the difference between a project and an assembly is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">345</span> Referencing types from another assembly</h2>
+</summary>
+<ul>
+<li>How to reference an existing assembly in our code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">346</span> Referencing types from another project</h2>
+</summary>
+<ul>
+<li>How to reference one project from another</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">347</span> Internal access modifier. Principles of using access modifiers</h2>
+</summary>
+<ul>
+<li>The purpose of the internal access modifier</li>
+<li>What happens when the type has a stricter access modifier than the members it contains</li>
+<li>Why the access modifiers we use within types and methods must be consistent</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">348</span> Protected internal access modifier</h2>
+</summary>
+<ul>
+<li>The purpose of the protected internal access modifier</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">349</span> Private protected access modifier</h2>
+</summary>
+<ul>
+<li>The purpose of the private protected access modifier</li>
+<li>The purpose of the file access modifier</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">350</span> Access modifiers - summary</h2>
+</summary>
+<ul>
+<li>The differences between access modifiers</li>
+<li>Which access modifiers should be used in what context</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">351</span> How to structure the code in a solution</h2>
+</summary>
+<ul>
+<li>How to split a solution into projects smartly</li>
+<li>What circular dependencies are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">352</span> NuGet</h2>
+</summary>
+<ul>
+<li>What NuGet is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">353</span> *.csproj files</h2>
+</summary>
+<ul>
+<li>What *.csproj files are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">354</span> *.sln files</h2>
+</summary>
+<ul>
+<li>What *.sln files are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">355</span> Updating the .NET version</h2>
+</summary>
+<ul>
+<li>How to update the version of .NET in the code we work on</li>
+</ul>
+</details> 
+</details>
+
+<details><summary>
+
+<h1><span class="section">Section 12 </span>Strings</h1>
+
+</summary>
+
+<details><summary>
+
+<h2><span class="lessonNum">356</span> Section introduction</h2>
+
+</summary>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">357</span> Char</h2>
+
+</summary>
+
+<ul>
+
+<li>More about chars</li>
+
+<li>Basic methods for character manipulation</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">358</span> Char representation in memory. Character encoding</h2>
+
+</summary>
+
+<ul>
+
+<li>How characters are stored in memory</li>
+
+<li>What character encoding is</li>
+
+<li>How UTF-16 encoding works</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">359</span> Managing various encodings</h2>
+
+</summary>
+
+<ul>
+
+<li>How to deal with various encodings of characters</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">360</span> Immutability of strings</h2>
+
+</summary>
+
+<ul>
+
+<li>About the immutability of strings</li>
+
+<li>What the underlying data structure for strings is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">361</span> Strings - value or reference types?</h2>
+
+</summary>
+
+<ul>
+
+<li>Whether strings are value or reference types</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">362</span> Strings as members in structs</h2>
+
+</summary>
+
+<ul>
+
+<li>Why structs should not contain fields or properties of reference types</li>
+
+<li>Why strings are an exception</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">363</span> A need for StringBuilder</h2>
+
+</summary>
+
+<ul>
+
+<li>What problems can be caused by an incremental building of large strings</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">364</span> StringBuilder</h2>
+
+</summary>
+
+<ul>
+
+<li>How to optimize the process of the incremental building of strings by using the StringBuilder class</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">365</span> String interning</h2>
+
+</summary>
+
+<ul>
+
+<li>What string interning is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">366</span> Flyweight design pattern</h2>
+
+</summary>
+
+<ul>
+
+<li>The flyweight design pattern</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">367</span> Advanced string formatting</h2>
+
+</summary>
+
+<ul>
+
+<li>Advanced formatting of strings</li>
+
+<li>More about string.Format method</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">368</span> Culture-specific string formatting</h2>
+
+</summary>
+
+<ul>
+
+<li>About culture-specific string formatting</li>
+
+<li>What CultureInfo object is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">369</span> Specific culture vs Invariant culture</h2>
+
+</summary>
+
+<ul>
+
+<li>What the difference between specific and invariant cultures is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">370</span> Assignment - Tickets Data Aggregator - Description and requirements</h2>
+
+</summary>
+
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">371</span> Assignment - Tickets Data Aggregator - It's time for you to try to solve it</h2>
+
+</summary>
+
+<ul>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">372</span> Assignment - Tickets Data Aggregator - Reading text from PDF</h2>
+
+</summary>
+
+<ul>
+
+<li>How to extract textual data from a PDF document</li>
+
+<li>What OCR is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">373</span> Assignment - Tickets Data Aggregator - List all PDFs from a folder</h2>
+
+</summary>
+
+<ul>
+
+<li>How to list all files with specific extensions from a given folder</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">374</span> Assignment - Tickets Data Aggregator - Splitting a string by multiple separators</h2>
+
+</summary>
+
+<ul>
+
+<li>How to split a string using a group of separators.</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">375</span> Assignment - Tickets Data Aggregator - Parsing culture-specific strings</h2>
+
+</summary>
+
+<ul>
+
+<li>Using specific cultures when managing strings</li>
+
+<li>DateOnly and TimeOnly types</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">376</span> Assignment - Tickets Data Aggregator - Saving all results in a text file</h2>
+
+</summary>
+
+<ul>
+
+<li>How to use invariant culture in practice</li>
+
+<li>How to use StringBuilder in practice</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">377</span> Assignment - Tickets Data Aggregator - Refactoring</h2>
+
+</summary>
+
+<ul>
+
+<li>How to refactor the code in practice, and how to split large method into smaller ones</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">378</span> Assignment - Tickets Data Aggregator - Compliance with the SRP</h2>
+
+</summary>
+
+<ul>
+
+<li>How to identify the responsibilities of a class in practice</li>
+
+<li>How to make a class compliant with the Single Responsibility Principle</li>
+
+</ul>
+
+</details>
+
+</details>
+
+<details><summary>
+<h1><span class="section">Section 13 </span>Numeric types</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">379</span> Section introduction</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">380</span> Decimal number system</h2>
+</summary>
+<ul>
+<li>How the decimal number system works</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">381</span> Binary number system</h2>
+</summary>
+<ul>
+<li>How the binary number system works</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">382</span> Maximal numbers on a given number of digits</h2>
+</summary>
+<ul>
+<li>The relation between the number of digits in a number and the maximal value of this number</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">383</span> Numbers in memory. Integer</h2>
+</summary>
+<ul>
+<li>How numbers are represented in a computer's memory</li>
+<li>What the size and range of an integer is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">384</span> Adding binary numbers</h2>
+</summary>
+<ul>
+<li>How to add binary numbers</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">385</span> Numeric overflow &amp; silent failures</h2>
+</summary>
+<ul>
+<li>What numeric overflow is</li>
+<li>Why it may be dangerous</li>
+<li>What silent failures are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">386</span> "checked" keyword</h2>
+</summary>
+<ul>
+<li>The purpose of the "checked" keyword</li>
+<li>How to deal with numeric overflows</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">387</span> Checked context - when to use it?</h2>
+</summary>
+<ul>
+<li>When the checked keyword should be used</li>
+<li>What the alternatives for using the checked context may be</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">388</span> Scope of the checked context. Unchecked keyword</h2>
+</summary>
+<ul>
+<li>How to enable checking for numeric overflow globally for a project</li>
+<li>What the purpose of the "unchecked" keyword is</li>
+<li>What the scope of a checked context is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">389</span> Integral numeric types overview.</h2>
+</summary>
+<ul>
+<li>About various integral numeric types</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">390</span> Floating-point numbers</h2>
+</summary>
+<ul>
+<li>What floating-point numbers are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">391</span> Double and float</h2>
+</summary>
+<ul>
+<li>How float and double work</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">392</span> Smart usage of floating point numbers</h2>
+</summary>
+<ul>
+<li>How to deal with the fact that floats and doubles are not perfectly precise</li>
+<li>What are reasonable use cases for them</li>
+<li>What NaN is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">393</span> Decimal</h2>
+</summary>
+<ul>
+<li>How to represent fractions in C# precisely</li>
+<li>More about decimal</li>
+<li>How is decimal different from double</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 14 </span>Events</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">394</span> Section introduction</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">395</span> A need for communication between objects</h2>
+</summary>
+<ul>
+<li>How sending notifications between software components may be implemented</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">396</span> A need for the Observer design pattern</h2>
+
+</summary>
+
+<ul>
+
+<li>What the characteristics of a good notification mechanism are</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">397</span> Observer design pattern</h2>
+
+</summary>
+
+<ul>
+
+<li>What the Observer design pattern is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">398</span> Defining an event and subscribing to it</h2>
+
+</summary>
+
+<ul>
+
+<li>How to define events</li>
+
+<li>How to subscribe to an events</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">399</span> Raising events</h2>
+
+</summary>
+
+<ul>
+
+<li>How to raise events</li>
+
+<li>The purpose of the Invoke method</li>
+
+<li>What the purpose of the null-propagating operator is ( ?. operator )</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">400</span> EventHandler delegate & EventArgs type</h2>
+
+</summary>
+
+<ul>
+
+<li>How to use the built-in EventHandler delegate</li>
+
+<li>What EventArgs type is</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">401</span> Event vs delegate members</h2>
+
+</summary>
+
+<ul>
+
+<li>The difference between an event and a member of a delegate type</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">402</span> Memory leaks caused by events</h2>
+
+</summary>
+
+<ul>
+
+<li>How events can cause the risk of memory leaks</li>
+
+<li>How to make sure such memory leaks will not happen</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">403</span> Windows Forms - introduction</h2>
+
+</summary>
+
+<ul>
+
+<li>What Windows Forms framework is</li>
+
+<li>The first Windows Forms app</li>
+
+<li>How to create a simple Windows Forms app</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">404</span> The first Windows Forms app</h2>
+
+</summary>
+
+<ul>
+
+<li>How to create a simple Windows Forms app</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">405</span> Understanding Windows Forms files</h2>
+
+</summary>
+
+<ul>
+
+<li>How a form we create using a designer is represented in C# file</li>
+
+<li>What regions are and how they can be defined</li>
+
+<li>What partial classes are</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">406</span> Events in Windows Forms</h2>
+
+</summary>
+
+<ul>
+
+<li>How to handle events that happen in the user interface of Windows Forms apps</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">407</span> Windows Forms - basic UI elements</h2>
+
+</summary>
+
+<ul>
+
+<li>basic UI elements used in Windows Forms apps</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">408</span> Assignment - Numeric Types Suggester - Description and requirements</h2>
+
+</summary>
+
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">409</span> Assignment - Numeric Types Suggester - It's time for you to try to solve it</h2>
+
+</summary>
+
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">410</span> Assignment - Numeric Types Suggester - User Interface & basic events</h2>
+
+</summary>
+
+<ul>
+
+<li>Creating interfaces and configuring events in practice</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">411</span> Assignment - Numeric Types Suggester - Handling KeyPress event</h2>
+
+</summary>
+
+<ul>
+
+<li>How to handle the KeyPress events raised by the textboxes to ensure only valid input is accepted</li>
+
+<li>How to use the sender parameter of an event handler method</li>
+
+</ul>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">412</span> Assignment - Numeric Types Suggester - Numbers validation and BigInteger type</h2>
+</summary>
+<ul>
+<li>How to implement the validation of values in a form</li>
+<li>How to parse strings to BigIntegers</li>
+</ul>
+</details>
+
+<details><summary>
+
+<h2><span class="lessonNum">413</span> Assignment - Numeric Types Suggester - Choosing Numeric Types</h2>
+</summary>
+<ul>
+<li>How to implement the algorithm for finding the proper numeric type based on the parameters of the numbers</li>
+</ul></details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 15 </span>Unit Testing</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">414</span> Section introduction</h2>
+</summary>
+<ul>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">415</span> Manual tests vs Automated tests</h2>
+</summary>
+<ul>
+<li>What automated tests are</li>
+<li>How they are better than manual tests</li>
+<li>Why is it worth</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">416</span> Setting up the testing environment</h2>
+</summary>
+<ul>
+<li>How to create a test project</li>
+<li>What NuGet packages are required to write and run unit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">417</span> First unit tests</h2>
+</summary>
+<ul>
+<li>How to write a unit test</li>
+<li>What an assertion is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">418</span> Unit testing fundamentals</h2>
+</summary>
+<ul>
+<li>How to run and debug unit tests</li>
+<li>What the Test Explorer is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">419</span> Running the tests</h2>
+</summary>
+<ul>
+<li>How to run and debug unit tests</li>
+<li>What the Test Explorer is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">420</span> Naming unit tests</h2>
+</summary>
+<ul>
+<li>How to name unit Tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">421</span> Test messages</h2>
+</summary>
+<ul>
+<li>How to specify the test messages</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">422</span> AAA pattern</h2>
+</summary>
+<ul>
+<li>What the AAA pattern is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">423</span> TestCase</h2>
+</summary>
+<ul>
+<li>What test cases are and how to define them</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">424</span> Naming parameterized tests</h2>
+</summary>
+<ul>
+<li>How to name tests consisting of many test cases</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">425</span> TestCaseSource</h2>
+</summary>
+<ul>
+<li>What the limitations of the TestCase attribute are</li>
+<li>How to bypass them by using the TestCaseSource attributes</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">426</span> Assertions on exceptions. Multiple...</h2>
+</summary>
+<ul>
+<li>How to write an assertion checking if an exception was thrown</li>
+<li>Whether it is a good idea to have more than one assert in a test</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">427</span> Value of unit tests</h2>
+</summary>
+<ul>
+<li>What the value of unit tests is in practice</li>
+<li>What code coverage is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">428</span> Basic assertions</h2>
+</summary>
+<ul>
+<li>The most basic types of assertions we can make in NUnit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">429</span> Testing private methods</h2>
+</summary>
+<ul>
+<li>How to approach testing private methods</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">430</span> Testing internal methods</h2>
+</summary>
+<ul>
+<li>How to approach testing internal methods</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">431</span> Benefits of unit tests - no fear of refactoring</h2>
+</summary>
+<ul>
+<li>How unit tests enable refactoring and improve code quality</li>
+<li>How it relates to the costs of producing software</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">431</span> Benefits of unit tests - better design</h2>
+</summary>
+<ul>
+<li>How unit tests help create better code design</li>
+<li>What TDD is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">432</span> Benefits of unit tests - early bug detection</h2>
+</summary>
+<ul>
+<li>How unit tests help detect bugs early</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">433</span> Downsides of unit tests</h2>
+</summary>
+<ul>
+<li>The downsides of unit tests</li>
+<li>The difference between white-box testing and black-box testing</li>
+<li>When it makes sense to skip unit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">434</span> Assignment - Fibonacci Generator Tests - Description and requirements</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">435</span> Assignment - Fibonacci Generator Tests - Solution</h2>
+</summary>
+<ul>
+<li>Creating unit tests in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">436</span> Testing classes depending on other classes</h2>
+</summary>
+<ul>
+<li>The need to test classes that depend on other classes</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">437</span> A need for mocks</h2>
+</summary>
+<ul>
+<li>What issues may be caused by using actual dependencies of a class in unit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">438</span> Mocks</h2>
+</summary>
+<ul>
+<li>What mocks are and how to use them</li>
+<li>How to install the Moq library</li>
+<li>How to install NuGet packages without opening the NuGet package manager</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">439</span> Controlling the mock behavior</h2>
+</summary>
+<ul>
+<li>How to control the behavior of a mock</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">440</span> The benefits of using mocks</h2>
+</summary>
+<ul>
+<li>What the benefits of using mocks are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">441</span> Advanced mock setup</h2>
+</summary>
+<ul>
+<li>Advanced techniques for controlling the behavior of mocks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2 class="h2"><span class="lessonNum">442</span> Assertion checking if a method was called</h2>
+</summary>
+<ul>
+<li>How to assert that a certain method was called on a mock</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">443</span> Advanced assertions on method calls</h2>
+</summary>
+<ul>
+<li>Advanced techniques for verifying the behavior of mocks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">444</span> Clean code in unit tests</h2>
+</summary>
+<ul>
+<li>About the importance of clean code in unit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">445</span> Common setup for tests</h2>
+</summary>
+<ul>
+<li>How to define a common setup for multiple tests</li>
+<li>What the CUT object is</li>
+<li>How using the nullable reference types feature may affect the code of our tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">446</span> Tests, Dependency Inversion and Dependency Injection</h2>
+</summary>
+<ul>
+<li>The importance of Dependency Inversion and Dependency Injection in the context of unit tests</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">447</span> Untestable code - no Dependency Inversion</h2>
+</summary>
+<ul>
+<li>How to fix the testability issues in code that breaks the Dependency Inversion Principle</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">448</span> Untestable code - static methods</h2>
+</summary>
+<ul>
+<li>How using static classes may make our code untestable</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">449</span> Other kinds of software tests</h2>
+</summary>
+<ul>
+<li>Different types of tests than unit tests (integration, end-to-end, performance, smoke and regression tests)</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">450</span> Assignment - Unit tests for GuessingGame - Description and requirements</h2>
+</summary>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">451</span> Assignment - Unit tests for GuessingGame - Basic scenarios</h2>
+</summary>
+<ul>
+<li>How to define unit tests in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">452</span> Assignment - Unit tests for GuessingGame - Checking the messages</h2>
+</summary>
+<ul>
+<li>Verifying if specific methods were executed on mocks in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">453</span> Assignment - Unit tests for GuessingGame - Approaches for messages validation</h2>
+</summary>
+<ul>
+<li>Various approaches to testing the exact messages produced by the code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">454</span> Assignment - Unit tests for GuessingGame - Resource files</h2>
+</summary>
+<ul>
+<li>What resource files are</li>
+<li>How to define them</li>
+<li>How to read their content</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">455</span> Breaking changes in NUnit 4</h2>
+</summary>
+<ul>
+  <li>Article</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 16 </span>Clean Code</h1>
+</summary>
+
+<details><summary>
+<h2><span class="lessonNum">456</span> Section introduction</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">457</span> The importance of clean code</h2>
+</summary>
+<ul>
+<li>Why keeping code clean is so important</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">458</span> Bad decisions related to code quality</h2>
+</summary>
+<ul>
+<li>What mistakes may lead to the fall of a software project</li>
+<li>What the Definition of Done (DoD) is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">459</span> Tech debt</h2>
+</summary>
+<ul>
+<li>What tech debt is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">460</span> Being professional</h2>
+</summary>
+<ul>
+<li>How we, the developers, should handle communication with the project management regarding the quality of the code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">461</span> What is clean code?</h2>
+</summary>
+<ul>
+<li>What clean code is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">462</span> The importance of meaningful names</h2>
+</summary>
+<ul>
+<li>What the importance of meaningful names is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">463</span> Renaming. The Boy Scout rule</h2>
+</summary>
+<ul>
+<li>How to rename things, and change bad names into better ones</li>
+<li>What the Boy Scout Rule is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">464</span> Dealing with problematic naming</h2>
+</summary>
+<ul>
+<li>What to do when we try to name something but a clear and expressive name simply cannot be found</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">465</span> Expressive names</h2>
+</summary>
+<ul>
+<li>How to name things so that our intentions are expressed clearly and precisely</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">466</span> Long and short names</h2>
+</summary>
+<ul>
+<li>How long the names should be</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">467</span> Clean code coding exercises</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">468</span> Principle of the least surprise</h2>
+</summary>
+<ul>
+<li>What the principle of the least surprise is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">469</span> Bad names - meaningless words</h2>
+</summary>
+<ul>
+<li>What meaningless words we should avoid when naming things</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">470</span> Bad names - overspecific names</h2>
+</summary>
+<ul>
+<li>Why using overspecific names is not a good idea.</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">471</span> Bad names - Hungarian notation</h2>
+</summary>
+<ul>
+<li>What Hungarian notation is and why it is better to avoid it</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">472</span> Bad names - confusing names</h2>
+</summary>
+<ul>
+<li>Examples of names that are confusing to the reader</li>
+<li>How we can avoid this</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">473</span> Bad names - abbreviations</h2>
+</summary>
+<ul>
+<li>Why using abbreviations is usually a mistake</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">474</span> Reasonable abbreviations. Conventional names</h2>
+</summary>
+<ul>
+<li>When using abbreviations may be acceptable</li>
+<li>Conventions in naming</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">475</span> Context</h2>
+</summary>
+<ul>
+<li>The importance of the context in which a name functions</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">476</span> Refactoring case study - naming</h2>
+</summary>
+<ul>
+<li>Refactoring with a focus on improving naming</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">477</span> Good signatures of methods</h2>
+</summary>
+<ul>
+<li>How to design methods signatures well</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">478</span> Number of parameters</h2>
+</summary>
+<ul>
+<li>How the number of method’s parameters can affect the cleanliness of the code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">479</span> Fewer parameters - splitting the method</h2>
+</summary>
+<ul>
+<li>How to reduce the number of method parameters by splitting this method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">480</span> Fewer parameters - bundling related parameters</h2>
+</summary>
+<ul>
+<li>How to reduce the number of method parameters by bundling multiple parameters together</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">481</span> Fewer parameters - avoiding boolean parameters</h2>
+</summary>
+<ul>
+<li>Why it is often better to avoid boolean parameters</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">482</span> Small methods</h2>
+</summary>
+<ul>
+<li>How big the methods should be</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">483</span> One method, one job</h2>
+</summary>
+<ul>
+<li>How many tasks one method should perform</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">484</span> One method, one job - refactoring example</h2>
+</summary>
+<ul>
+<li>An example of a method that fails to do one thing only</li>
+<li>How such methods could be refactored</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">485</span> Levels of abstraction</h2>
+</summary>
+<ul>
+<li>What levels of abstraction are</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">486</span> Composing different levels of abstraction</h2>
+</summary>
+<ul>
+<li>How to correctly compose operations that are at different levels of abstraction</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">487</span> Levels of abstraction within methods</h2>
+</summary>
+<ul>
+<li>How to achieve methods in which the levels of abstraction are correctly utilized</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">488</span> Refactoring case study - methods - introduction</h2>
+</summary>
+<ul>
+<li>Refactoring methods in practice</li>
+<li>Identifying issues in methods design</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">489</span> Refactoring case study - methods - signature</h2>
+</summary>
+<ul>
+<li>Refactoring of a method’s signature</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">490</span> Refactoring case study - methods - body</h2>
+</summary>
+<ul>
+<li>Refactoring of a method’s body by extracting smaller methods</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">491</span> Comments</h2>
+</summary>
+<ul>
+<li>Why adding comments is usually a bad idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">492</span> The worst comments</h2>
+</summary>
+<ul>
+<li>Common examples of using comments in an extremely poor manner</li>
+<li>What the alternative solutions could be</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">493</span> The reasonable comments</h2>
+</summary>
+<ul>
+<li>Scenarios when using comments may be a good idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">494</span> When to make methods static? Private methods</h2>
+</summary>
+<ul>
+<li>When making methods static is a good idea (private methods)</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">495</span> The risk of making public methods static</h2>
+</summary>
+<ul>
+<li>Why making public methods static may be a bad idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">496</span> When to make methods static? Public methods</h2>
+</summary>
+<ul>
+<li>When making a public method static may be a good idea</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">497</span> Composition over inheritance</h2>
+</summary>
+<ul>
+<li>The differences and similarities between composition and inheritance</li>
+<li>Composition over Inheritance principle</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">498</span> The issues of inheritance</h2>
+</summary>
+<ul>
+<li>What issues inheritance causes</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">499</span> Replacing inheritance with composition</h2>
+</summary>
+<ul>
+<li>How we can refactor the code to use composition rather than inheritance</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">500</span> Benefits of composition</h2>
+</summary>
+<ul>
+<li>Benefits of composition over inheritance</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">501</span> Assignment - Password Generator Refactoring - Description and requirements</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">502</span> Assignment - Password Generator Refactoring - Existing code</h2>
+</summary>
+<ul>
+<li>The purpose of the Enumerable.Repeat method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">503</span> Assignment - Password Generator Refactoring - Fixing naming</h2>
+</summary>
+<ul>
+<li>How to improve naming in code</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">504</span> Assignment - Password Generator Refactoring - Improving design</h2>
+</summary>
+<ul>
+<li>How to improve design in code</li>
+</ul>
+</details>
+</details>
+
+
+<details><summary>
+<h1><span class="section">Section 17 </span>Multithreading & asynchrony</h1>
+</summary>
+<details><summary>
+<h2><span class="lessonNum">505</span> Section introduction</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">506</span> The computer’s processor</h2>
+</summary>
+<ul>
+<li>How the computer’s processor works</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">507</span> Threads and processes</h2>
+</summary>
+<ul>
+<li>What a thread is</li>
+<li>What multithreading means</li>
+<li>What a process is</li>
+<li>The difference between a thread and a process</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">508</span> Concurrency vs parallelism</h2>
+</summary>
+<ul>
+<li>The difference between concurrency and parallelism</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">509</span> Asynchrony</h2>
+</summary>
+<ul>
+<li>What asynchrony is</li>
+<li>The difference between asynchrony and multithreading</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">510</span> A single-threaded program</h2>
+</summary>
+<ul>
+<li>How a basic, single-threaded application is processed by the CPU</li>
+<li>How to check the number of cores in CPU</li>
+<li>How to list all threads in the application while debugging</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">511</span> Starting a new thread. The Thread class</h2>
+</summary>
+<ul>
+<li>How to start a new thread using the Thread class</li>
+<li>The difference between foreground and background threads</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">512</span> Multithreaded app’s code flow</h2>
+</summary>
+<ul>
+<li>How the flow of the program changes when we use multiple threads</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">513</span> The benefits of multithreading and asynchronous programming</h2>
+</summary>
+<ul>
+<li>Why we need multithreading and asynchronous programming</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">514</span> The cost of threads. ThreadPool</h2>
+</summary>
+<ul>
+<li>The cost of creating new threads</li>
+<li>How it can be reduced by using the ThreadPool</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">515</span> Task Parallel Library (TPL)</h2>
+</summary>
+<ul>
+<li>What TPL, the Task Parallel Library is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">516</span> Task class</h2>
+</summary>
+<ul>
+<li>What the Task class is</li>
+<li>How to create and start new Tasks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">517</span> Returning a value from a Task</h2>
+</summary>
+<ul>
+<li>How to define Tasks that return a value</li>
+<li>The purpose of the Thread.Sleep method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">518</span> Waiting for the Task result</h2>
+</summary>
+<ul>
+<li>How to wait for the Task to return its result</li>
+<li>What a blocking operation is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">519</span> Wait and WaitAll methods</h2>
+</summary>
+<ul>
+<li>The purpose of the Wait and WaitAll methods</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">520</span> Continuations. The ContinueWith method</h2>
+</summary>
+<ul>
+<li>How to wait for task completion in a non-blocking way</li>
+<li>What task continuations are</li>
+<li>How we can use them to perform some action after a task is completed</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">521</span> Chaining continuations. Continuations of multiple tasks</h2>
+</summary>
+<ul>
+<li>How to define a chain of continuations, that will all be executed one after the other</li>
+<li>How to schedule a continuation of multiple tasks</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">522</span> Canceling a Task</h2>
+</summary>
+<ul>
+<li>How cancellations of tasks work</li>
+<li>What a cancellation token is and how to use it</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">523</span> Task lifecycle</h2>
+</summary>
+<ul>
+<li>What the lifecycle of a task is</li>
+<li>How we can check the task's current status</li>
+<li>What child tasks are</li>
+<li>The purpose of the Task.FromResult method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">524</span> OperationCanceledException</h2>
+</summary>
+<ul>
+<li>The typical way of canceling tasks</li>
+<li>The role of the OperationCanceledException</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">525</span> Exceptions thrown by other threads</h2>
+</summary>
+<ul>
+<li>How exceptions are managed when they are thrown on other threads</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">526</span> Exceptions in tasks</h2>
+</summary>
+<ul>
+<li>What happens if an exception is thrown within a task</li>
+<li>What an AggregateException is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">527</span> Asynchronous exception handling</h2>
+</summary>
+<ul>
+<li>How to handle exceptions thrown from tasks asynchronously</li>
+<li>The purpose of the TaskContinuationOptions enum</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">528</span> Handling AggregateException</h2>
+</summary>
+<ul>
+<li>How to handle exceptions carried within AggregateException</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">529</span> Multiple continuations for one task</h2>
+</summary>
+<ul>
+<li>How to set up multiple continuations for a single task</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">530</span> Handling task cancellation</h2>
+</summary>
+<ul>
+<li>How to handle task cancellation</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">531</span> The need for synchronization</h2>
+</summary>
+<ul>
+<li>Why we need synchronization mechanisms when working with multithreading</li>
+<li>An example of an operation performed by multiple threads that may result in an unexpected program output</li>
+<li>What thread safety is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">532</span> Atomic operations</h2>
+</summary>
+<ul>
+<li>What asynchrony is</li>
+<li>The difference between asynchrony and multithreading</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">533</span> Race condition</h2>
+</summary>
+<ul>
+<li>What asynchrony is</li>
+<li>The difference between asynchrony and multithreading</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">534</span> Locks</h2>
+</summary>
+<ul>
+<li>What a lock is</li>
+<li>How to use it to prevent two threads from accessing some shared resources at the same time</li>
+<li>What a critical section is</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">535</span> The need for async/await</h2>
+</summary>
+<ul>
+<li>Why we need async/await</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">536</span> “Await” keyword</h2>
+</summary>
+<ul>
+<li>The purpose of the “await” keyword</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">537</span> Async methods</h2>
+</summary>
+<ul>
+<li>How to define async methods</li>
+<li>What types can be returned from async methods</li>
+<li>What types we can use the "await" keyword with</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">538</span> Asynchrony vs multithreading</h2>
+</summary>
+<ul>
+<li>The difference between asynchrony and multithreading (revisited)</li>
+<li>The purpose of the Task.Delay method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">539</span> The flow of an asynchronous program</h2>
+</summary>
+<ul>
+<li>The flow of an asynchronous program</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">540</span> Async/await and threads</h2>
+</summary>
+<ul>
+<li>The relation between the async/await pattern and the creation of new threads</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">541</span> Async/await summary</h2>
+</summary>
+<ul>
+<li>The summary of the async/await topic</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">542</span> Async/await practice</h2>
+</summary>
+<ul>
+<li>Using async/await in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">543</span> Exceptions in async methods</h2>
+</summary>
+<ul>
+<li>How to deal with exceptions thrown in async methods</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">544</span> Downsides of multithreading & asynchrony</h2>
+</summary>
+<ul>
+<li>The downsides of multithreading and asynchrony</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">545</span> Using async methods in practice. HttpClient</h2>
+</summary>
+<ul>
+<li>How to communicate with APIs using asynchronous methods from the HttpClient class</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">546</span> Assignment - Quote Finder - Description and requirements</h2>
+</summary>
+
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">547</span> Assignment - Quote Finder - Fetching data</h2>
+</summary>
+<ul>
+<li>Using async methods in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">548</span> Assignment - Quote Finder - Smart asynchrony</h2>
+</summary>
+<ul>
+<li>How to write optimal code fetching data with multiple requests</li>
+<li>The purpose of the Task.WhenAll method</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">549</span> Assignment - Quote Finder - Single-threaded processing</h2>
+</summary>
+<ul>
+<li>The purpose of the StringSplitOptions and StringComparison enums</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">550</span> Assignment - Quote Finder - Multi-threaded processing</h2>
+</summary>
+<ul>
+<li>Using multithreading in practice</li>
+</ul>
+</details>
+
+<details><summary>
+<h2><span class="lessonNum">551</span> Assignment - Quote Finder - Refactoring</h2>
+</summary>
+<ul>
+<li>Practice how code can be refactored and divided into classes</li>
+<li>The naming convention for async methods</li>
+</ul>
+</details>
+</details>
+
+<details><summary>
+<h1><span class="section">Section 18 </span>Bonus Section</h1>
+</summary>
+<ul>
+<li>Congratulations!</li>
+<li>Thank you!</li>
+<li>Leave a review!</li>
+<li>Price discount Coupon for all other courses</li>
+</ul>
+</details></details>
+
+</body>
+
+</html>
+
